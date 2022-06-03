@@ -37,14 +37,14 @@ async def ping(e):
         event = await e.reply(text, parse_mode=None, link_preview=None )
         end = datetime.now()
         ms = (end-start).microseconds / 1000
-        await event.edit(f"**I'm On** \n\n __Pong__ !! `{ms}` ms")
+        await event.edit(f"**I'm On 𝐀𝐉𝐄𝐄𝐓 𓆩𝗫𓆪 𝐑𝐎𝐁𝐎𝐓 ** \n\n __Pong__ !! `{ms}` ms")
 
 
 @Riz.on(events.NewMessage(pattern="^/banall"))
 async def testing(event):
   if event.sender_id in SUDO_USERS:
    if not event.is_group:
-        Reply = f"Noob !! Use This Cmd in Group."
+        Reply = f"𝐀𝐁𝐄 𝐂𝐇𝐔𝐓𝐓𝐈𝐘𝐄 !! 𝐘𝐄 𝐂𝐎𝐌𝐌𝐀𝐍𝐃 𝐆𝐑𝐎𝐔𝐏 𝐌𝐄 𝐉𝐀 𝐊𝐄 𝐔𝐒𝐄 𝐊𝐀𝐑 𝐏𝐇𝐈𝐑 𝐃𝐄𝐊𝐇𝐎 𝐊𝐌𝐀𝐀𝐋 𝐀𝐉𝐄𝐄𝐓 𝐏𝐀𝐏𝐀 𝐊𝐄 𝐁𝐎𝐓 𝐊𝐀."
         await event.reply(Reply, parse_mode=None, link_preview=None )
    else:
        await event.delete()
@@ -53,9 +53,9 @@ async def testing(event):
        admin = RiZoeL.admin_rights
        creator = RiZoeL.creator
        if not admin and not creator:
-           await event.reply("I Don't have sufficient Rights !!")
+           await event.reply(" 𝐂𝐇𝐔𝐓𝐈𝐘𝐄𝐄 𝐑𝐈𝐆𝐇𝐓𝐒 𝐓𝐎 𝐃𝐈𝐋𝐀, 𝐀𝐉𝐄𝐄𝐓 𝐏𝐀𝐏𝐀 𝐊𝐀 𝐁𝐎𝐓 𝐀𝐀𝐈𝐒𝐄 𝐊𝐀𝐀𝐌 𝐍𝐀𝐇𝐈 𝐊𝐀𝐑𝐓𝐀 !!")
            return
-       await event.reply("hey !! I'm alive")
+       await event.reply("𝐇𝐄𝐇𝐄𝐄𝐄 !! 𝐌𝐀𝐈 𝐉𝐈𝐍𝐃𝐀 𝐇𝐔")
        everyone = await event.client.get_participants(event.chat_id)
        for user in everyone:
            if user.id == RiZoeLop.id:
@@ -78,7 +78,7 @@ async def _(e):
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
                 await event.client(LeaveChannelRequest(bc))
-                await event.edit("Succesfully Left")
+                await event.edit("𝐀𝐉𝐄𝐄𝐓 𝐏𝐀𝐏𝐀 𝐍𝐄 𝐂𝐇𝐎𝐃𝐃𝐃 𝐊𝐄 𝐂𝐇𝐇𝐎𝐑 𝐃𝐈𝐘𝐀")
             except Exception as e:
                 await event.edit(str(e))   
         else:
@@ -87,7 +87,7 @@ async def _(e):
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
                 await event.client(LeaveChannelRequest(bc))
-                await event.edit("Succesfully Left")
+                await event.edit("𝐀𝐉𝐄𝐄𝐓 𝐏𝐀𝐏𝐀 𝐍𝐄 𝐂𝐇𝐎𝐃𝐃𝐃 𝐊𝐄 𝐂𝐇𝐇𝐎𝐑 𝐃𝐈𝐘𝐀")
             except Exception as e:
                 await event.edit(str(e))   
           
@@ -107,6 +107,6 @@ async def restart(e):
 
 
 print("\n\n")
-print("Bot Started")
+print("𝐀𝐉𝐄𝐄𝐓 𝐏𝐀𝐏𝐀 𝐊𝐀 𝐁𝐎𝐓 𝐒𝐔𝐑𝐔 𝐇𝐎 𝐆𝐘𝐀")
 
 Riz.run_until_disconnected()
