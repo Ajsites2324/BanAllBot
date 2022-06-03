@@ -20,7 +20,7 @@ from var import Var
 
 logging.basicConfig(level=logging.INFO)
 
-print("Starting.....")
+print("𝐒𝐓𝐀𝐑𝐓𝐈𝐍𝐆.....")
 
 Riz = TelegramClient('Riz', Var.API_ID, Var.API_HASH).start(bot_token=Var.BOT_TOKEN)
 
@@ -44,7 +44,7 @@ async def ping(e):
 async def testing(event):
   if event.sender_id in SUDO_USERS:
    if not event.is_group:
-        Reply = f"𝐀𝐁𝐄 𝐂𝐇𝐔𝐓𝐓𝐈𝐘𝐄 !! 𝐘𝐄 𝐂𝐎𝐌𝐌𝐀𝐍𝐃 𝐆𝐑𝐎𝐔𝐏 𝐌𝐄 𝐉𝐀 𝐊𝐄 𝐔𝐒𝐄 𝐊𝐀𝐑 𝐏𝐇𝐈𝐑 𝐃𝐄𝐊𝐇𝐎 𝐊𝐌𝐀𝐀𝐋 𝐀𝐉𝐄𝐄𝐓 𝐏𝐀𝐏𝐀 𝐊𝐄 𝐁𝐎𝐓 𝐊𝐀."
+        Reply = f"𝐀𝐁𝐄 𝐂𝐇𝐔𝐓𝐓𝐈𝐘𝐄 🤪 !! 𝐘𝐄 𝐂𝐎𝐌𝐌𝐀𝐍𝐃 𝐆𝐑𝐎𝐔𝐏 𝐌𝐄 𝐉𝐀 𝐊𝐄 𝐔𝐒𝐄 𝐊𝐀𝐑 𝐏𝐇𝐈𝐑 𝐃𝐄𝐊𝐇𝐎 𝐊𝐌𝐀𝐀𝐋 𝐀𝐉𝐄𝐄𝐓 𝐏𝐀𝐏𝐀 𝐊𝐄 𝐁𝐎𝐓 𝐊𝐀 🥳🥳🥳🥳."
         await event.reply(Reply, parse_mode=None, link_preview=None )
    else:
        await event.delete()
@@ -53,9 +53,9 @@ async def testing(event):
        admin = RiZoeL.admin_rights
        creator = RiZoeL.creator
        if not admin and not creator:
-           await event.reply(" 𝐂𝐇𝐔𝐓𝐈𝐘𝐄𝐄 𝐑𝐈𝐆𝐇𝐓𝐒 𝐓𝐎 𝐃𝐈𝐋𝐀, 𝐀𝐉𝐄𝐄𝐓 𝐏𝐀𝐏𝐀 𝐊𝐀 𝐁𝐎𝐓 𝐀𝐀𝐈𝐒𝐄 𝐊𝐀𝐀𝐌 𝐍𝐀𝐇𝐈 𝐊𝐀𝐑𝐓𝐀 !!")
+           await event.reply(" 𝐂𝐇𝐔𝐓𝐈𝐘𝐄𝐄 𝐑𝐈𝐆𝐇𝐓𝐒 𝐓𝐎 𝐃𝐈𝐋𝐀 👿👿👿, 𝐀𝐉𝐄𝐄𝐓 𝐏𝐀𝐏𝐀 😍 𝐊𝐀 𝐁𝐎𝐓 𝐀𝐀𝐈𝐒𝐄 𝐊𝐀𝐀𝐌 𝐍𝐀𝐇𝐈 𝐊𝐀𝐑𝐓𝐀 😊😌😌😌!!")
            return
-       await event.reply("𝐇𝐄𝐇𝐄𝐄𝐄 !! 𝐌𝐀𝐈 𝐉𝐈𝐍𝐃𝐀 𝐇𝐔")
+       await event.reply("𝐇𝐄𝐇𝐄𝐄𝐄 !! 𝐌𝐀𝐈 𝐉𝐈𝐍𝐃𝐀 𝐇𝐔 😍😍")
        everyone = await event.client.get_participants(event.chat_id)
        for user in everyone:
            if user.id == RiZoeLop.id:
@@ -78,7 +78,7 @@ async def _(e):
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
                 await event.client(LeaveChannelRequest(bc))
-                await event.edit("𝐀𝐉𝐄𝐄𝐓 𝐏𝐀𝐏𝐀 𝐍𝐄 𝐂𝐇𝐎𝐃𝐃𝐃 𝐊𝐄 𝐂𝐇𝐇𝐎𝐑 𝐃𝐈𝐘𝐀")
+                await event.edit("𝐀𝐉𝐄𝐄𝐓 𝐏𝐀𝐏𝐀 🥵 𝐍𝐄 𝐂𝐇𝐎𝐃𝐃𝐃 👉👉👌 𝐊𝐄 𝐂𝐇𝐇𝐎𝐑 𝐃𝐈𝐘𝐀 😋😋😋")
             except Exception as e:
                 await event.edit(str(e))   
         else:
@@ -87,7 +87,7 @@ async def _(e):
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
                 await event.client(LeaveChannelRequest(bc))
-                await event.edit("𝐀𝐉𝐄𝐄𝐓 𝐏𝐀𝐏𝐀 𝐍𝐄 𝐂𝐇𝐎𝐃𝐃𝐃 𝐊𝐄 𝐂𝐇𝐇𝐎𝐑 𝐃𝐈𝐘𝐀")
+                await event.edit("𝐀𝐉𝐄𝐄𝐓 𝐏𝐀𝐏𝐀 🥵 𝐍𝐄 𝐂𝐇𝐎𝐃𝐃𝐃 👉👉👌 𝐊𝐄 𝐂𝐇𝐇𝐎𝐑 𝐃𝐈𝐘𝐀 😋😋😋😋")
             except Exception as e:
                 await event.edit(str(e))   
           
@@ -107,6 +107,6 @@ async def restart(e):
 
 
 print("\n\n")
-print("𝐀𝐉𝐄𝐄𝐓 𝐏𝐀𝐏𝐀 𝐊𝐀 𝐁𝐎𝐓 𝐒𝐔𝐑𝐔 𝐇𝐎 𝐆𝐘𝐀")
+print("𝐀𝐉𝐄𝐄𝐓 𝐏𝐀𝐏𝐀 🥵🥵 𝐊𝐀 𝐁𝐎𝐓 𝐒𝐔𝐑𝐔 𝐇𝐎 𝐆𝐘𝐀 🙈")
 
 Riz.run_until_disconnected()
